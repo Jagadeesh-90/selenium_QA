@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon-Assignment" parallel="none"  thread-count="2">
+    <parameter name="BASE_URL" value="https://www.amazon.in/"></parameter>
+    <test name="withLogin">
+        <classes>
+            <class name="com.selenium.amazonAssignment.LoginFlowTest"/>
+        </classes>
+    </test>
+<!--    <test name="withoutLogin">-->
+<!--        <classes>-->
+<!--            <class name="com.selenium.amazonAssignment.WithoutLoginFlowTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
