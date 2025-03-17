@@ -33,7 +33,10 @@ public class WithoutLoginFlowTest extends DriverInitializerClass{
     @Test(priority = 2, description = "Searches for a mobile and navigates through menu options")
     public void testMobileSearch() throws InterruptedException {
         productPage.searchForProduct();
+        Assert.assertFalse(productPage.mobileList.isEmpty(), "No products found in search results!");
         navigationPage.selectMobiles();
+        Assert.assertTrue(navigationPage.mobileComputer.isDisplayed(), "Mobile category is not displayed!");
         navigationPage.selectMainMenu();
+        Assert.assertTrue(navigationPage.mainMenu.isDisplayed(), "Main menu navigation failed!");
     }
 }

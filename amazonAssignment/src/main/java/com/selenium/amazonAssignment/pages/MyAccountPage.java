@@ -23,15 +23,15 @@ public class MyAccountPage extends AbstractComponent {
         PageFactory.initElements(driver,this);
     }
     @FindBy(id = ORDER_BUTTON)
-    private WebElement orderBtn;
+    public WebElement orderBtn;
     @FindBy(id = TIME_FILTER)
     private WebElement timeFilter;
     @FindBy(id = MY_ACCOUNT)
-    private WebElement myAccount;
+    public WebElement myAccount;
     @FindBy(css = MY_PAYMENTS)
-    private WebElement myPayments;
+    public WebElement myPayments;
     @FindBy(css = MY_ADDRESS)
-    private WebElement myAddress;
+    public WebElement myAddress;
     @FindBy(id = ADD_ADDRESS)
     private WebElement addAddress;
     @FindBy(css = FULL_NAME)

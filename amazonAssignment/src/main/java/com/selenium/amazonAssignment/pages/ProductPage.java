@@ -31,7 +31,7 @@ public class ProductPage extends AbstractComponent {
     private WebElement searchButton;
 
     @FindBy(css = SEARCH_RESULTS)
-    private List<WebElement> mobileList;
+    public List<WebElement> mobileList;
 
     @FindBy(css = PRIME_CHECKBOX)
     private WebElement primeCheckBox;
@@ -55,6 +55,5 @@ public class ProductPage extends AbstractComponent {
     public void getDeliveryDate(){
         log.info("get delivery date of 1st product");
         System.out.println(deliveryDate.getText());
-
     }
 }

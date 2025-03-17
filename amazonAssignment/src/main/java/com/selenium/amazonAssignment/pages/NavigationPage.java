@@ -20,11 +20,11 @@ public class NavigationPage extends AbstractComponent {
     @FindBy(id = NAV_MENU)
     private WebElement navMenu;
     @FindBy(css = MOBILE_COMPUTER)
-    private WebElement mobileComputer;
+    public WebElement mobileComputer;
     @FindBy(xpath = ALL_MOBILE_PHONES)
     private WebElement allMobilePhones;
     @FindBy(id = MAIN_MENU)
-    private WebElement mainMenu;
+    public WebElement mainMenu;
 
     public void selectMobiles() throws InterruptedException {
         Actions action = new Actions(driver);
